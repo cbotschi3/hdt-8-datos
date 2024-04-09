@@ -22,7 +22,7 @@ class PriorityQueueManager {
 
     private void cargarPacientes() {
         try {
-            File file = new File("/Users/cbotschi3/Documents/Documents/UVG/2024/primer semestre/Datos/hdt-8-datos");
+            File file = new File("pacientes.txt");
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
