@@ -22,7 +22,7 @@ class PriorityQueueManager {
 
     private void cargarPacientes() {
         try {
-            File file = new File("C:\\Users\\javib\\OneDrive\\Documentos\\GitHub\\Hoja-de-Trabajo-8\\src\\main\\java\\com\\pacientes.txt");
+            File file = new File("/Users/cbotschi3/Documents/Documents/UVG/2024/primer semestre/Datos/hdt-8-datos");
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
@@ -40,7 +40,7 @@ class PriorityQueueManager {
             e.printStackTrace();
         }
     }
-
+    
     private void atenderPacientes() {
         while (!emergencias.isEmpty()) {
             Paciente siguiente = emergencias.remove();
